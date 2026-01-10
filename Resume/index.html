@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div style="text-align: center;">
-        <h1>Naushad Ahmad</h1>
-        <p>Phone: +91-1234567890</p>
-        <p>Email: naushadahmad@example.com</p>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #e149493c;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #333;
+            background-image: linear-gradient(to right, #ccc, #333, #ccc);
+            margin: 20px 0;
+        }
+        .summary p {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    </style>
+    <div class="summary"  data-auto-ref= "Introtag" style="text-align: center;">
+        <h1 id="userName">Naushad Ahmad</h1>
+        <p><i class="fas fa-phone"></i> +91-1234567890</p>
+        <p><i class="fas fa-envelope"></i> naushadahmad@example.com</p>
+        <p><i class="fab fa-linkedin"></i> linkedin.com/in/naushadahmad</p>
+        <p><i class="fab fa-github"></i> github.com/naushadahmad</p>  
     </div>
+    <hr>
     <h2> Summary</h2>
     <p>Experienced software developer with a strong background in web development and a passion for creating efficient and scalable applications. currently working at Publicis Sapient. I have experienced in javascript react and node.js. looking for new Opportunity.</p>
     <hr>
@@ -44,7 +68,7 @@
     <h2> Education</h2>
     <p><b>Bachelor of Technology in ECE</b></p>
     <p>UIET Kanpur, 2017 - 2021</p>   
-    <footer
+    <footer></footer>
         <hr>
         <p style="text-align: left;">© 2024 Naushad Ahmad</p>
     </footer>   

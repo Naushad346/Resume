@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume of Naushad Ahmad, Software Developer">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #e149493c;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #333;
+            background-image: linear-gradient(to right, #ccc, #333, #ccc);
+            margin: 20px 0;
+        }
+        .summary p {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    </style>
+    <div id="landing">
+        <h1>Naushad Ahmad</h1>
+        <h3>Automation Test Engineer </h3>
+        <p>Aspiring Full stack software Developer</p>
+        <button id="view-resume">View Resume</button>
+    </div>
+    <div id="resume-view">
+        <button id="close-resume">Close Resume</button>
+        <header class="summary" data-auto-ref="Introtag" style="text-align: center;" role="banner">
+            <h1 id="userName">Naushad Ahmad</h1>
+            <p aria-label="Phone number"><i class="fas fa-phone" aria-hidden="true"></i> +91-1234567890</p>
+            <p aria-label="Email address"><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:naushadahmad@example.com">naushadahmad@example.com</a></p>
+            <p aria-label="LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/naushad-a-0a876a192/" target="_blank" rel="noopener">linkedin.com/in/naushadahmad</a></p>
+            <p aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i> <a href="https://github.com/Naushad346" target="_blank" rel="noopener">github.com/naushadahmad</a></p>
+        </header>
+        <hr>
+        <main id="main-content">
+            <section>
+                <h2>Summary</h2>
+                <p>Experienced software developer with a strong background in web development and a passion for creating efficient and scalable applications. Currently working at Publicis Sapient. I have experience in JavaScript, React, and Node.js. Looking for new opportunities.</p>
+            </section>
+            <hr>
+            <section>
+                <h2 id="technicalSkills">Technical Skills</h2>
+                <ul>
+                    <li><strong>Programming Languages:</strong> JavaScript, Python, Java</li>
+                    <li><strong>Web Technologies:</strong> HTML, CSS, React, Node.js, Express</li>
+                    <li><strong>Databases:</strong> MongoDB, MySQL</li>
+                    <li><strong>Version Control:</strong> Git, GitHub</li>
+                    <li><strong>Other Tools:</strong> Docker, AWS, Jenkins</li>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <h2 id="professionalExperience">Professional Experience</h2>
+                <h3>Software Developer at Publicis Sapient</h3>
+                <p><em>June 2021 - Present</em></p>
+                <ul>
+                    <li>Developed and maintained web applications using React and Node.js.</li>
+                    <li>Collaborated with cross-functional teams to define, design, and ship new features.</li>
+                    <li>Optimized applications for maximum speed and scalability.</li>
+                    <li>Implemented RESTful APIs and integrated third-party services.</li>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <h2 id="projects">Projects</h2>
+                <h3>Project Name: E-commerce Website</h3>
+                <ul>
+                    <li>Developed a full-stack e-commerce application using React for the frontend and Node.js for the backend.</li>
+                    <li>Implemented user authentication, product management, and payment gateway integration.</li>
+                    <li>Deployed the application on AWS and ensured high availability and scalability.</li>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <h2 id="education">Education</h2>
+                <p><strong>Bachelor of Technology in ECE</strong></p>
+                <p>UIET Kanpur, 2017 - 2021</p>
+            </section>
+        </main>
+        <footer class="footer" role="contentinfo">
+            <hr>
+            <p>© 2026 Naushad Ahmad</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('view-resume').addEventListener('click', function() {
+            document.getElementById('landing').style.display = 'none';
+            document.getElementById('resume-view').style.display = 'block';
+        });
+        document.getElementById('close-resume').addEventListener('click', function() {
+            document.getElementById('resume-view').style.display = 'none';
+            document.getElementById('landing').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>

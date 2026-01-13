@@ -1,3 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #222020;
+}
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+}
+.skip-link:focus {
+    top: 6px;
+}
 .summary{
     font-size: 14px;
     line-height: 1.6;
@@ -21,4 +40,71 @@ li{
 }
 p{
     margin-bottom: 12px;
+}
+footer{
+    p{
+        font-size: 18px;
+        color: white;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    background-color: #0f0404;
+    margin-top: 20px;
+    text-align: center;
+}
+#landing {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url("reumeimg.jpg");
+    border: rgb(19, 18, 18) 5px solid;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+#landing h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+button {
+    background-color: #af734c;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+button:hover {
+    background-color: #45a049;
+}
+#close-resume {
+    background-color: #f44336;
+    margin-bottom: 20px;
+}
+#close-resume:hover {
+    background-color: #da190b;
+}
+#resume-view {
+    display: none;
+    padding: 20px;
+}
+
+#resume-view button:first-of-type {
+    margin-right: auto;
+}
+
+#resume-view button:last-of-type {
+    margin-left: auto;
+}
+#download-resume {
+    background-color: #4CAF50;
+    margin-bottom: 20px;
+}
+#download-resume:hover {
+    background-color: #81b083;
 }
